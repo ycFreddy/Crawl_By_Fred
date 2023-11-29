@@ -62,7 +62,7 @@ def remplirCSV (nomfichier, ligne):
         if ligne.status == 200:    
             if ligne.titre is not None: titre = ligne.titre
             if ligne.meta_description is not None: meta_description = ligne.meta_description["content"]
-            if ligne.h1 is not None: h1 = str(ligne.h1.text)
+            if ligne.h1 is not None: h1 = str(ligne.h1)
         writer.writerow({"Status code":ligne.status, "Url":ligne.url, "Titre":titre, "Meta Description":meta_description, "H1":h1})
 
 def crawl (url, nomfichier):
