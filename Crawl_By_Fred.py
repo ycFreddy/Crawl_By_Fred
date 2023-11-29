@@ -20,12 +20,11 @@ class PageInfos:
     self.status = self.reponse.status_code        
     if self.status == 200:
         self.page = BeautifulSoup(self.reponse.text, "html.parser")
-        self.titre = self.page.find("title").text
         self.meta_description = self.page.find("meta", attrs={"name":"description"})
-        self.h1 = self.page.find("h1")
+        self.titre = self.page.title.string        
+        self.h1 = self.page.h1.string        
         self.liens = [a['href'] for a in self.page.find_all('a', href=True)]           
         self.liens_clean = clean_liens(self.liens)
-        #print("ici:", self.liens_clean)
 
 def clean_liens(liens):
     clean_links = deque([])
