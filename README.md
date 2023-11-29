@@ -9,6 +9,3 @@ Quand on a du temps libre on s'amuse à créer un bout de code qui va venir expl
 
 <img src ="https://github.com/ycFreddy/Crawl_By_Fred/blob/main/export_crawl.csv.png" width="600">
 
-## Aperçu HTML
-
-https://ycfreddy.github.io/Crawl_By_Fred/export_crawl.html
