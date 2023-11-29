@@ -5,6 +5,8 @@ Crawl-By-Fred
 Quand on a du temps libre on s'amuse à créer un bout de code qui va venir explorer votre site à tous moments
 😎
 
-## Aperçu du rendu
+## Aperçu d'un import dans un tableaur
 
 <img src ="https://github.com/ycFreddy/Crawl_By_Fred/blob/main/export_crawl.csv.png" width="600">
+
+## Aperçu HTML
