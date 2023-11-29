@@ -1,7 +1,6 @@
 import os
 import re
 import requests
-import urllib.request
 from bs4 import BeautifulSoup
 from collections import deque
 from html.parser import HTMLParser
@@ -74,7 +73,6 @@ def crawl (url, nomfichier):
     infos = PageInfos(url)
     queue = infos.liens_clean
     while queue:
-        #traiter le lien        
         lien = queue.pop()         
         if lien not in lienvu:
             lienInfos = PageInfos(lien)
